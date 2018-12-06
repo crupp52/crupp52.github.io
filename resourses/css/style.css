@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Roboto:300,400');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	color: #555555;
+}
+
+a {
+	text-decoration: none;
+	color: #555555;
+}
+
+/* Header */
+
+header {
+	width: 100%;
+	background: yellow;
+	position: fixed;
+	top: 0;
+	z-index: 999;
+}
+
+nav {
+	width: 70%;
+	margin: 0 auto;
+	padding: 20px;
+	text-align: center;
+}
+
+nav .menu-option {
+	margin: 0 30px;
+	border-bottom: 2px solid transparent;
+	transition: border-bottom 0.5s;
+}
+
+nav .menu-option:hover, nav .menu-option:active {
+	border-bottom: 2px solid #555555;
+}
+
+.hero {
+	height: 100vh;
+	width: 100%;
+	background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(img/hero.jpg);
+	background-position: center;
+	background-size: cover;	
+	background-attachment: fixed;
+}
+
+.hero h1 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	font-family: 'Playfair Display', serif;
+	color: white;
+	font-size: 500%;
+}
+
+/* Main */
+
+section {
+	margin: auto;
+}
+
+.hello {
+	padding: 30px;
+}
+
+.contact{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate( -50%, -50%);
+	text-align: center;
+}
